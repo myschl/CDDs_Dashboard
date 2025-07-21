@@ -5,6 +5,8 @@ from io import BytesIO
 import numpy as np
 import sys
 import subprocess
+import os
+os.environ["PIP_NO_BINARY"] = "pandas"  # Force source build fallback
 
 # Check if pandas is installed
 try:
