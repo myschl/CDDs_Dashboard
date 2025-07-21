@@ -1,9 +1,6 @@
-pandas==2.2.2
 numpy==1.26.4
 streamlit==1.29.0
 matplotlib==3.8.3
 openpyxl==3.1.2
 pyarrow==15.0.2
 pandas==1.5.3
---only-binary :all:  # Force use of precompiled wheels
-pandas==2.2.2
