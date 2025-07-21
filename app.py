@@ -3,7 +3,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from io import BytesIO
 import numpy as np
+import sys
+import subprocess
 
+# Check if pandas is installed
+try:
+    import pandas as pd
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas==2.2.2"])
+    import pandas as pd
+    
 # Configure page
 st.set_page_config(page_title="CDD Reporting Dashboard", page_icon="📊", layout="wide")
 st.title("📊 CDD Reporting Dashboard")
